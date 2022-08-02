@@ -1,0 +1,50 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-07-19T16:16:03.8270000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{HasAttachments}": "Has attachments",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Miniatura",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "ID": "ID",
+      "LastPlayed": "LastPlayed",
+      "LastPlayed#Claims": "LastPlayed Claims",
+      "Modified": "Modified",
+      "Players": "Players",
+      "Players#Claims": "Players Claims",
+      "Players@odata.type": "Players (Players@odata.type)",
+      "Status": "Status",
+      "Status#Id": "Status Id",
+      "Title": "Title"
+    },
+    "DatasetName": "https://torpedopt.sharepoint.com/sites/TorpedoPhantom/TorpedoLaboratory/Ideias",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "TicTacToeGames",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

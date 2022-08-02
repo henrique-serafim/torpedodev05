@@ -1,0 +1,76 @@
+{
+  "4ddc6b2a-7f77-4578-8478-e750facc69ac": {
+    "connectionParameters": {
+      "applicationId": "ac7991ca-a321-47c6-8e6c-771930a0a9dd",
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Power Apps Notification",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1461/1.0.1461.2397/powerappsnotification/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerappsnotification",
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_powerappsnotification/connections/d17d1dcd72a041ed908b500938cfe0e7"
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerAppsNotification"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4ddc6b2a-7f77-4578-8478-e750facc69ac"
+  },
+  "5cc1c5a4-df65-49de-8e06-116d263293d8": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1528/1.0.1528.2589/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5cc1c5a4-df65-49de-8e06-116d263293d8"
+  },
+  "69af9442-bcdc-4f85-80d5-1e8e2e2382a3": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1533/1.0.1533.2600/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://torpedopt.sharepoint.com/sites/TorpedoPhantom/TorpedoLaboratory/Ideias": {
+        "dataSources": {
+          "TicTacToe": {
+            "tableName": "d0ce9f14-c634-419f-9c75-58995871df1e"
+          },
+          "TicTacToeGames": {
+            "tableName": "826e0ce6-b1a4-4ca0-a52b-44a73c1c76ce"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "TicTacToe",
+      "TicTacToeGames"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "69af9442-bcdc-4f85-80d5-1e8e2e2382a3"
+  }
+}

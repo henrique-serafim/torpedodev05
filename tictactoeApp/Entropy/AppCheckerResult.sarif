@@ -1,0 +1,2763 @@
+{
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
+  "runs": [
+    {
+      "columnKind": "utf16CodeUnits",
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "results": [
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 56,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "ViewGame",
+                "type": "ViewGame"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Number"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 50,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "ViewGame",
+                "type": "ViewGame"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID_x003a_ID.Value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT1.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT1.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT1.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT1.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT2.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT2.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT2.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT2.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT3.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT3.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT3.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT3.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT3.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT4.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT4.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT4.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT4.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT4.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT4.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT4.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT4.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT4.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT4.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT4.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT4.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT5.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT5.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT5.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT5.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT5.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT5.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT5.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT5.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT5.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT5.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT5.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT5.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT6.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT6.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT6.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT6.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT6.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT6.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT6.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT6.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT6.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT6.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT6.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT6.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT7.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT7.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT7.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT7.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT7.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT7.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT7.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT7.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT7.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT7.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT7.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT7.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT8.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT8.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT8"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT8.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT8.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT8"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT8.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT8.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT8"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT8.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT8.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT8"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT8.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT8.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT8"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT8.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT8.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT8"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT9.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT9.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT9"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT9.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT9.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT9"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT9.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT9.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT9"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT9.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT9.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 93,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT9"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT9.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT9.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 40,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT9"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GameID.Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewGame.btnT9.DisplayMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewGame.btnT9.DisplayMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayMode",
+                "module": "ViewGame",
+                "type": "ViewGame.btnT9"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Welcome screen'.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Welcome screen'.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Welcome screen",
+                "type": "'Welcome screen'.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Welcome screen'.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Welcome screen'.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Welcome screen",
+                "type": "'Welcome screen'.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Welcome screen'.ListUsers.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Welcome screen'.ListUsers.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Welcome screen",
+                "type": "'Welcome screen'.ListUsers"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Welcome screen'.GamesGallery.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Welcome screen'.GamesGallery.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Welcome screen",
+                "type": "'Welcome screen'.GamesGallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Welcome screen'.GamesGallery.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Welcome screen'.GamesGallery.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Welcome screen",
+                "type": "'Welcome screen'.GamesGallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Selected"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Selected",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Selected",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.tooManyMoves"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.tooManyMoves",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "tooManyMoves",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.line4"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.line4",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "line4",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.line5"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.line5",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "line5",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.line6"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.line6",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "line6",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.line7"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.line7",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "line7",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.line8"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.line8",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "line8",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.youWon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.youWon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "youWon",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        }
+      ],
+      "tool": {
+        "driver": {
+          "fullName": "PowerApps app checker",
+          "name": "PowerApps app checker",
+          "rules": [
+            {
+              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
+                  "If you’re comparing records or tables, the field or column types must match exactly."
+                ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+              "messageStrings": {
+                "issue": {
+                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
+                ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-SuggestRemoteExecutionHint",
+              "messageStrings": {
+                "issue": {
+                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
+                ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "acc-AccessibleLabelNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing accessible label"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Edit the accessible label property to describe the item."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "If there's no accessible text, people who can’t see the screen won't understand what’s in images and controls."
+              }
+            },
+            {
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "messageStrings": {
+                "issue": {
+                  "text": "Missing tab stop"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+              }
+            }
+          ],
+          "version": "1.325"
+        }
+      }
+    }
+  ],
+  "version": "2.1.0"
+}

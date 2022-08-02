@@ -1,0 +1,190 @@
+"'Welcome screen' As screen":
+
+    "GamesGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Items: =TicTacToeGames
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =92
+        Y: =546
+        ZIndex: =1
+
+        PlayerName As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =LookUp(ThisItem.Players,DisplayName<>Office365Users.MyProfile().DisplayName).Claims
+            VerticalAlign: =VerticalAlign.Top
+            Width: =300
+            X: =13
+            Y: =20
+            ZIndex: =3
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Set(Game,ThisItem);Navigate(ViewGame,ScreenTransition.None)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Visible: =If(And(ThisItem.LastPlayed.DisplayName<>Office365Users.MyProfile().DisplayName,Or(ThisItem.Status.Value<>"Pending",ThisItem.Status.Value<>"Rejected")),true, false) || true
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Status As label:
+            Height: =38
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Status.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =127
+            X: =419
+            Y: =20
+            ZIndex: =6
+
+        Turn As label:
+            Height: =31
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =If(ThisItem.LastPlayed.DisplayName<>Office365Users.MyProfile().DisplayName,"Your Turn", "His Turn")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =159
+            X: =13
+            Y: =50
+            ZIndex: =7
+
+    lblOpponent As label:
+        Height: =70
+        Size: =21
+        Text: ="Opponent"
+        Width: =560
+        X: =13
+        Y: =491
+        ZIndex: =2
+
+    lblStatus As label:
+        Height: =67
+        Size: =21
+        Text: ="Status"
+        Width: =187
+        X: =415
+        Y: =494
+        ZIndex: =3
+
+    ListUsers As combobox:
+        BorderColor: =Colors.Fill
+        ChevronBackground: =Colors.Fill
+        ChevronHoverBackground: =Colors.Hover
+        DisplayFields: =["DisplayName"]
+        Height: =70
+        IsSearchable: =false
+        Items: |-
+            =Filter(Office365Users.SearchUser({searchTerm:""}),EndsWith(Mail,"torpedo.pt"))
+        PressedFill: =Colors.Fill
+        SearchFields: =["DisplayName"]
+        SearchItems: =[]
+        SelectMultiple: =false
+        Size: =21
+        Width: =575
+        X: =31
+        Y: =317
+        ZIndex: =4
+
+    Image1 As image:
+        Height: =179
+        Image: =cooltext379920955208931
+        Width: =600
+        X: =19
+        ZIndex: =5
+
+    Image2 As image:
+        Height: =127
+        Image: ='TORPEDO-LOGO-GREEN'
+        Width: =196
+        X: =195
+        Y: =131
+        ZIndex: =6
+
+    Label1 As label:
+        Align: =Align.Center
+        Height: =70
+        Size: =21
+        Text: ="Select someone to play with"
+        Width: =560
+        X: =38
+        Y: =247
+        ZIndex: =7
+
+    Button2 As button:
+        Fill: =Colors.Fill
+        Height: =70
+        HoverFill: =Colors.Hover
+        OnSelect: |-
+            =ClearCollect(Users,{
+                            '@odata.type': "#Microsoft.Azure.Connectors.Sharepoint.SPListExpandedUser",
+                            Claims: "i:0#.f|membership|"&User().Email
+                        });
+            Collect(Users,{
+                            '@odata.type': "#Microsoft.Azure.Connectors.Sharepoint.SPListExpandedUser",
+                            Claims: "i:0#.f|membership|"&ListUsers.Selected.Mail
+                        });            
+            Collect(
+                TicTacToeGames,
+                {
+                    Title: "TicTacToe",
+                    Players: Users,
+                    Status: {Value: "InProgress"},
+                    LastPlayed: {
+                        '@odata.type': "#Microsoft.Azure.Connectors.Sharepoint.SPListExpandedUser",
+                        Claims: "i:0#.f|membership|"&User().Email
+                    }
+                }
+            );
+            Set(Game,Last(Filter(TicTacToeGames,'Created By'.Email=User().Email)));
+            If(
+                !IsBlank(ListUsers.Selected.Mail),
+                PowerAppsNotification.SendPushNotification(
+                    {
+                        recipients: Table({Value: ListUsers.Selected.Mail}),
+                        message: "Hey come play!",
+                        openApp: true
+                    }
+                )
+            );
+            Navigate(ViewGame,ScreenTransition.None)
+        Size: =24
+        Text: ="Start a game"
+        Width: =280
+        X: =178
+        Y: =421
+        ZIndex: =8
+
+    Icon1 As icon.Reload:
+        Icon: =Icon.Reload
+        OnSelect: =Refresh(TicTacToeGames)
+        X: =555
+        Y: =162
+        ZIndex: =9
+

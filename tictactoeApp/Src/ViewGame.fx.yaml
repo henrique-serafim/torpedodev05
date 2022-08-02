@@ -1,0 +1,307 @@
+ViewGame As screen:
+    OnVisible: |-
+        =Set(CurrentPlay,First(Filter(TicTacToe,'GameID:ID'.Value=Game.ID)));
+        If(First(Filter(TicTacToeGames,ID=Game.ID)).Author.Email=User().Email,Set(XO,"X"),Set(XO,"O"));Set(Selected,false);If(First(Filter(TicTacToeGames,ID=Game.ID)).LastPlayed.Email=User().Email,Set(yourTurn,true),Set(yourTurn,false))
+
+    btnT1 As button:
+        DisplayMode: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T1.Value),DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Colors.Fill
+        Height: =170
+        HoverFill: =Colors.Hover
+        OnSelect: =If(IsBlank(T1) && !Moves && yourTurn,Set(T1,XO);Set(Moves,true);Set(tooManyMoves,true),If(!IsBlank(T1)&& Moves && yourTurn,Set(T1,"");Set(Moves,false),Set(tooManyMoves,true)))
+        PressedFill: =Colors.Hover
+        Size: =24
+        Text: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T1),T1,First(Filter(TicTacToe,GameID.Id=Game.ID)).T1.Value)
+        Width: =170
+        X: =46
+        Y: =302
+        ZIndex: =1
+
+    Label3 As label:
+        Height: =70
+        Size: =21
+        Text: =Game.ID
+        Width: =560
+        Y: =1065
+        ZIndex: =2
+
+    btnT2 As button:
+        DisplayMode: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T2),DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Colors.Fill
+        Height: =170
+        HoverFill: =Colors.Hover
+        OnSelect: =If(IsBlank(T2) && !Moves && yourTurn,Set(T2,XO);Set(Moves,true);Set(tooManyMoves,true),If(!IsBlank(T2)&& Moves && yourTurn,Set(T2,"");Set(Moves,false),Set(tooManyMoves,true)))
+        PressedFill: =Colors.Hover
+        Size: =24
+        Text: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T2),T2,First(Filter(TicTacToe,GameID.Id=Game.ID)).T2.Value)
+        Width: =170
+        X: =235
+        Y: =302
+        ZIndex: =4
+
+    btnT3 As button:
+        DisplayMode: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T3),DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Colors.Fill
+        Height: =170
+        HoverFill: =Colors.Hover
+        OnSelect: =If(IsBlank(T3) && !Moves && yourTurn,Set(T3,XO);Set(Moves,true);Set(tooManyMoves,true),If(!IsBlank(T3)&& Moves && yourTurn,Set(T3,"");Set(Moves,false),Set(tooManyMoves,true)))
+        PressedFill: =Colors.Hover
+        Size: =24
+        Text: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T3),T3,First(Filter(TicTacToe,GameID.Id=Game.ID)).T3.Value)
+        Width: =170
+        X: =430
+        Y: =302
+        ZIndex: =6
+
+    btnT4 As button:
+        DisplayMode: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T4),DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Colors.Fill
+        Height: =170
+        HoverFill: =Colors.Hover
+        OnSelect: =If(IsBlank(T4) && !Moves && yourTurn,Set(T4,XO);Set(Moves,true);Set(tooManyMoves,true),If(!IsBlank(T4)&& Moves && yourTurn,Set(T4,"");Set(Moves,false),Set(tooManyMoves,true)))
+        PressedFill: =Colors.Hover
+        Size: =24
+        Text: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T4),T4,First(Filter(TicTacToe,GameID.Id=Game.ID)).T4.Value)
+        Width: =170
+        X: =46
+        Y: =493
+        ZIndex: =8
+
+    btnT5 As button:
+        DisplayMode: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T5),DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Colors.Fill
+        Height: =170
+        HoverFill: =Colors.Hover
+        OnSelect: =If(IsBlank(T5) && !Moves && yourTurn,Set(T5,XO);Set(Moves,true);Set(tooManyMoves,true),If(!IsBlank(T5)&& Moves && yourTurn,Set(T5,"");Set(Moves,false),Set(tooManyMoves,true)))
+        PressedFill: =Colors.Hover
+        Size: =24
+        Text: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T5),T5,First(Filter(TicTacToe,GameID.Id=Game.ID)).T5.Value)
+        Width: =170
+        X: =235
+        Y: =493
+        ZIndex: =10
+
+    btnT6 As button:
+        DisplayMode: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T6),DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Colors.Fill
+        Height: =170
+        HoverFill: =Colors.Hover
+        OnSelect: =If(IsBlank(T6) && !Moves && yourTurn,Set(T6,XO);Set(Moves,true);Set(tooManyMoves,true),If(!IsBlank(T6)&& Moves && yourTurn,Set(T6,"");Set(Moves,false),Set(tooManyMoves,true)))
+        PressedFill: =Colors.Hover
+        Size: =24
+        Text: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T6),T6,First(Filter(TicTacToe,GameID.Id=Game.ID)).T6.Value)
+        Width: =170
+        X: =430
+        Y: =493
+        ZIndex: =12
+
+    btnT7 As button:
+        DisplayMode: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T7),DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Colors.Fill
+        Height: =170
+        HoverFill: =Colors.Hover
+        OnSelect: =If(IsBlank(T7) && !Moves && yourTurn,Set(T7,XO);Set(Moves,true);Set(tooManyMoves,true),If(!IsBlank(T7)&& Moves && yourTurn,Set(T7,"");Set(Moves,false),Set(tooManyMoves,true)))
+        PressedFill: =Colors.Hover
+        Size: =24
+        Text: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T7),T7,First(Filter(TicTacToe,GameID.Id=Game.ID)).T7.Value)
+        Width: =170
+        X: =46
+        Y: =682
+        ZIndex: =14
+
+    btnT8 As button:
+        DisplayMode: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T8),DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Colors.Fill
+        Height: =170
+        HoverFill: =Colors.Hover
+        OnSelect: =If(IsBlank(T8) && !Moves && yourTurn,Set(T8,XO);Set(Moves,true);Set(tooManyMoves,true),If(!IsBlank(T8)&& Moves && yourTurn,Set(T8,"");Set(Moves,false),Set(tooManyMoves,true)))
+        PressedFill: =Colors.Hover
+        Size: =24
+        Text: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T8),T8,First(Filter(TicTacToe,GameID.Id=Game.ID)).T8.Value)
+        Width: =170
+        X: =238
+        Y: =682
+        ZIndex: =16
+
+    btnT9 As button:
+        DisplayMode: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T9),DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =Colors.Fill
+        Height: =170
+        HoverFill: =Colors.Hover
+        OnSelect: =If(IsBlank(T9) && !Moves && yourTurn,Set(T9,XO);Set(Moves,true);Set(tooManyMoves,true),If(!IsBlank(T9)&& Moves && yourTurn,Set(T9,"");Set(Moves,false),Set(tooManyMoves,true)))
+        PressedFill: =Colors.Hover
+        Size: =24
+        Text: =If(IsBlank(First(Filter(TicTacToe,GameID.Id=Game.ID)).T9),T9,First(Filter(TicTacToe,GameID.Id=Game.ID)).T9.Value)
+        Width: =170
+        X: =430
+        Y: =682
+        ZIndex: =18
+
+    Submit As button:
+        Color: =RGBA(255,255,255,1)
+        Fill: =Colors.Fill
+        Height: =70
+        HoverFill: =Colors.Hover
+        OnSelect: |
+            =Set(
+                line1,
+                T1 && T2 && T3
+            );
+            Set(
+                line2,
+                T4 && T5 && T6
+            );
+            Set(
+                line3,
+                T7 && T8 && T9
+            );
+            Set(
+                line4,
+                T1 && T4 && T7
+            );
+            Set(
+                line5,
+                T2 && T5 && T8
+            );
+            Set(
+                line6,
+                T3 && T6 && T9
+            );
+            Set(
+                line7,
+                T1 && T5 && T9
+            );
+            Set(
+                line8,
+                T3 && T5 && T7
+            );
+            If(
+                Or(
+                    line1,
+                    line2,
+                    line3
+                ) && !IsBlank(
+                    And(
+                        line1,
+                        line2,
+                        line3
+                    )
+                ),
+                Set(
+                    youWon,
+                    true
+                );
+                Patch(
+                    TicTacToe,
+                    {
+                        GameID: {
+                            Id: Game.ID,
+                            Value: Game.ID
+                        }
+                    },
+                    {
+                        T1: {Value: btnT1.Text},
+                        T2: {Value: btnT2.Text},
+                        T3: {Value: btnT3.Text},
+                        T4: {Value: btnT4.Text},
+                        T5: {Value: btnT5.Text},
+                        T6: {Value: btnT6.Text},
+                        T7: {Value: btnT7.Text},
+                        T8: {Value: btnT8.Text},
+                        T9: {Value: btnT9.Text}
+                    }
+                );
+                Patch(
+                    TicTacToeGames,
+                    {ID: Game.ID},
+                    {Status: {Value: "Completed"}}
+                );
+                Notify("You Won!"),If(!IsBlank(CurrentPlay),
+                Patch(
+                    TicTacToe,
+                    Defaults(TicTacToe),
+                    {
+                        GameID:{Id:Game.ID,Value:"TicTacToe"},
+                        T1: {Value: btnT1.Text},
+                        T2: {Value: btnT2.Text},
+                        T3: {Value: btnT3.Text},
+                        T4: {Value: btnT4.Text},
+                        T5: {Value: btnT5.Text},
+                        T6: {Value: btnT6.Text},
+                        T7: {Value: btnT7.Text},
+                        T8: {Value: btnT8.Text},
+                        T9: {Value: btnT9.Text}
+                    }
+                ),Collect(TicTacToe,{GameID:{Id:Game.ID,Value:"TicTacToe"},T1: {Value: btnT1.Text},
+                        T2: {Value: btnT2.Text},
+                        T3: {Value: btnT3.Text},
+                        T4: {Value: btnT4.Text},
+                        T5: {Value: btnT5.Text},
+                        T6: {Value: btnT6.Text},
+                        T7: {Value: btnT7.Text},
+                        T8: {Value: btnT8.Text},
+                        T9: {Value: btnT9.Text}}));
+                Patch(
+                    TicTacToeGames,
+                    {ID: Game.ID},
+                    {
+                        LastPlayed: {
+                            '@odata.type': "#Microsoft.Azure.Connectors.Sharepoint.SPListExpandedUser",
+                            Claims: "i:0#.f|membership|" & User().Email,
+                            Department: "",
+                            DisplayName: User().FullName,
+                            Email: User().Email,
+                            JobTitle: "",
+                            Picture: ""
+                        }
+                    }
+                );
+                PowerAppsNotification.SendPushNotification(
+                    {
+                        recipients: Table({Value: ListUsers.Selected.Mail}),
+                        message: "Hey come play!",
+                        openApp: true,
+                        params:Table({key:"yourTurn",value:true},{key:"ID",Value:Game.ID})
+                    }
+                )
+            );
+            Set(
+                yourTurn,
+                false
+            );
+            Navigate('Welcome screen');
+        Size: =24
+        Text: ="Submit"
+        Width: =280
+        X: =180
+        Y: =920
+        ZIndex: =19
+
+    Image1_1 As image:
+        Height: =179
+        Image: =cooltext379920955208931
+        Width: =600
+        X: =19
+        ZIndex: =20
+
+    Image2_1 As image:
+        Height: =127
+        Image: ='TORPEDO-LOGO-GREEN'
+        Width: =196
+        X: =195
+        Y: =131
+        ZIndex: =21
+
+    Submit_1 As button:
+        Color: =RGBA(255,255,255,1)
+        Fill: =Colors.Fill
+        Height: =52
+        HoverFill: =Colors.Hover
+        OnSelect: =Back()
+        Size: =24
+        Text: ="back"
+        Width: =170
+        X: =238
+        Y: =1013
+        ZIndex: =22
+

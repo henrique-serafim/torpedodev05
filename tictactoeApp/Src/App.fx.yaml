@@ -1,0 +1,51 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =Set(
+            Colors,
+            {
+                Fill: RGBA(
+                    106,
+                    146,
+                    95,
+                    1
+                ),
+                Hover: RGBA(
+                    106,
+                    146,
+                    95,
+                    0.8
+                ),
+                Pending: RGBA(
+                    28,
+                    110,
+                    140,
+                    1
+                ),
+                Open: RGBA(
+                    255,
+                    237,
+                    101,
+                    1
+                ),
+                Approved: RGBA(
+                    255,
+                    255,
+                    255,
+                    1
+                ),
+                Rejected: RGBA(
+                    214,
+                    40,
+                    40,
+                    1
+                ),
+                Delete: RGBA(
+                    214,
+                    40,
+                    40,
+                    1
+                )
+            }
+        );
+
