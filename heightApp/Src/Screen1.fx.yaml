@@ -1,0 +1,85 @@
+Screen1 As screen:
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =76
+        Size: =20
+        Text: ="Height calculator tool"
+        Width: =1366
+        ZIndex: =1
+
+    Label2 As label:
+        Text: ="Input your height"
+        X: =608
+        Y: =200
+        ZIndex: =2
+
+    TextInput1 As text:
+        Default: =""
+        Format: =TextFormat.Number
+        Width: =150
+        X: =608
+        Y: =258
+        ZIndex: =3
+
+    Label3 As label:
+        Text: ="cm"
+        X: =758
+        Y: =258
+        ZIndex: =4
+
+    Button1 As button:
+        OnSelect: =Set(heightvar, TextInput1.Text);Set(showResult, true)
+        Text: ="Calculate"
+        X: =603
+        Y: =331
+        ZIndex: =5
+
+    Rectangle1 As rectangle:
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =768
+        OnSelect: =Set(showResult, false)
+        Visible: =showResult
+        Width: =1366
+        ZIndex: =6
+
+    Rectangle2 As rectangle:
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =247
+        Visible: =showResult
+        Width: =351
+        X: =507
+        Y: =260
+        ZIndex: =7
+
+    Label4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Text: ="Result"
+        Visible: =showResult
+        Width: =351
+        X: =507
+        Y: =260
+        ZIndex: =8
+
+    Label5 As label:
+        Text: ="Your height is " & heightvar & "cm!"
+        Visible: =showResult
+        Width: =255
+        X: =603
+        Y: =371
+        ZIndex: =9
+
+    Icon1 As icon.CancelBadge:
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =0
+        Icon: =Icon.Information
+        Visible: =showResult
+        X: =539
+        Y: =359
+        ZIndex: =10
+
