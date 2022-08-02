@@ -7,7 +7,7 @@ Screen1 As screen:
         FontWeight: =FontWeight.Bold
         Height: =76
         Size: =20
-        Text: ="Height calculator tool"
+        Text: ="Height calculator tool changed!"
         Width: =1366
         ZIndex: =1
 
